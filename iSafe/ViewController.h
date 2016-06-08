@@ -7,9 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UINavigationControllerDelegate,MFMessageComposeViewControllerDelegate, CLLocationManagerDelegate>
 
+- (IBAction)addGaurdians:(id)sender;
+- (IBAction)sOS:(id)sender;
+
+- (IBAction)fakeCall:(id)sender;
+- (IBAction)videoCall:(id)sender;
+
+- (IBAction)firstAid:(id)sender;
+
+- (IBAction)instructions:(id)sender;
 
 @end
 

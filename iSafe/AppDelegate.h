@@ -17,8 +17,10 @@
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
-- (void)saveContext;
-- (NSURL *)applicationDocumentsDirectory;
+-(NSString *) getDBPath;
+
+//- (void)saveContext;
+//- (NSURL *)applicationDocumentsDirectory;
 
 
 @end

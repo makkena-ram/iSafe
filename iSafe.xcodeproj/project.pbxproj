@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A37C8831A24EA6D00096A1F /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37C8821A24EA6D00096A1F /* Contact.m */; };
+		2A39FD891A2B947D00E5243A /* VideoCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A39FD881A2B947D00E5243A /* VideoCallViewController.m */; };
+		2A45A0621A30CFD700961E5C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A45A0611A30CFD700961E5C /* MessageUI.framework */; };
+		2A45A0641A30DF2100961E5C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A45A0631A30DF2100961E5C /* CoreLocation.framework */; };
+		2A6CD2971A32353300A1137A /* FirstAidTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6CD2961A32353300A1137A /* FirstAidTVC.m */; };
 		2ACB5B8D1A0E88CD00A7E294 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACB5B8C1A0E88CD00A7E294 /* main.m */; };
 		2ACB5B901A0E88CD00A7E294 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACB5B8F1A0E88CD00A7E294 /* AppDelegate.m */; };
 		2ACB5B931A0E88CD00A7E294 /* iSafe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2ACB5B911A0E88CD00A7E294 /* iSafe.xcdatamodeld */; };
@@ -15,6 +20,15 @@
 		2ACB5B9B1A0E88CD00A7E294 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ACB5B9A1A0E88CD00A7E294 /* Images.xcassets */; };
 		2ACB5B9E1A0E88CD00A7E294 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ACB5B9C1A0E88CD00A7E294 /* LaunchScreen.xib */; };
 		2ACB5BAA1A0E88CD00A7E294 /* iSafeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACB5BA91A0E88CD00A7E294 /* iSafeTests.m */; };
+		2ACB5BB71A0E93E200A7E294 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ACB5BB61A0E93E200A7E294 /* libsqlite3.0.dylib */; };
+		2ACB5BBD1A0E962800A7E294 /* NewGaurdianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACB5BBC1A0E962800A7E294 /* NewGaurdianViewController.m */; };
+		2ACB5BC01A0EE53700A7E294 /* AddGaurdiansViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACB5BBF1A0EE53700A7E294 /* AddGaurdiansViewController.m */; };
+		2AD92ADD1A303FD200E1DCAE /* GlobalVariables.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD92ADC1A303FD200E1DCAE /* GlobalVariables.m */; };
+		2AF4D6B51A30548B0099EAF1 /* ContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF4D6B41A30548B0099EAF1 /* ContactsTableViewController.m */; };
+		2AF4D6B71A30599B0099EAF1 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF4D6B61A30599B0099EAF1 /* AddressBook.framework */; };
+		2AF4D6B91A3059A30099EAF1 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF4D6B81A3059A30099EAF1 /* AddressBookUI.framework */; };
+		8FADC1A61A32C764007783F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FADC1A51A32C764007783F5 /* CoreGraphics.framework */; };
+		8FADC1A81A32D1F4007783F5 /* iSafe.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 8FADC1A71A32D1F4007783F5 /* iSafe.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A37C8811A24EA6D00096A1F /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		2A37C8821A24EA6D00096A1F /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		2A39FD871A2B947D00E5243A /* VideoCallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCallViewController.h; sourceTree = "<group>"; };
+		2A39FD881A2B947D00E5243A /* VideoCallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCallViewController.m; sourceTree = "<group>"; };
+		2A45A0611A30CFD700961E5C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		2A45A0631A30DF2100961E5C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2A6CD2951A32353300A1137A /* FirstAidTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstAidTVC.h; sourceTree = "<group>"; };
+		2A6CD2961A32353300A1137A /* FirstAidTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstAidTVC.m; sourceTree = "<group>"; };
+		2AB6A9F51A2A7E84006F87D4 /* AddOrCancel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddOrCancel.h; sourceTree = "<group>"; };
 		2ACB5B871A0E88CD00A7E294 /* iSafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ACB5B8B1A0E88CD00A7E294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2ACB5B8C1A0E88CD00A7E294 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +65,19 @@
 		2ACB5BA31A0E88CD00A7E294 /* iSafeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSafeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ACB5BA81A0E88CD00A7E294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2ACB5BA91A0E88CD00A7E294 /* iSafeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iSafeTests.m; sourceTree = "<group>"; };
+		2ACB5BB61A0E93E200A7E294 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		2ACB5BBB1A0E962800A7E294 /* NewGaurdianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewGaurdianViewController.h; path = ../NewGaurdianViewController.h; sourceTree = "<group>"; };
+		2ACB5BBC1A0E962800A7E294 /* NewGaurdianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewGaurdianViewController.m; path = ../NewGaurdianViewController.m; sourceTree = "<group>"; };
+		2ACB5BBE1A0EE53700A7E294 /* AddGaurdiansViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddGaurdiansViewController.h; sourceTree = "<group>"; };
+		2ACB5BBF1A0EE53700A7E294 /* AddGaurdiansViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddGaurdiansViewController.m; sourceTree = "<group>"; };
+		2AD92ADB1A303FD200E1DCAE /* GlobalVariables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalVariables.h; sourceTree = "<group>"; };
+		2AD92ADC1A303FD200E1DCAE /* GlobalVariables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalVariables.m; sourceTree = "<group>"; };
+		2AF4D6B31A30548B0099EAF1 /* ContactsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsTableViewController.h; sourceTree = "<group>"; };
+		2AF4D6B41A30548B0099EAF1 /* ContactsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsTableViewController.m; sourceTree = "<group>"; };
+		2AF4D6B61A30599B0099EAF1 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		2AF4D6B81A3059A30099EAF1 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		8FADC1A51A32C764007783F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8FADC1A71A32D1F4007783F5 /* iSafe.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = iSafe.sqlite; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +85,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FADC1A61A32C764007783F5 /* CoreGraphics.framework in Frameworks */,
+				2A45A0641A30DF2100961E5C /* CoreLocation.framework in Frameworks */,
+				2A45A0621A30CFD700961E5C /* MessageUI.framework in Frameworks */,
+				2AF4D6B91A3059A30099EAF1 /* AddressBookUI.framework in Frameworks */,
+				2AF4D6B71A30599B0099EAF1 /* AddressBook.framework in Frameworks */,
+				2ACB5BB71A0E93E200A7E294 /* libsqlite3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +107,12 @@
 		2ACB5B7E1A0E88CD00A7E294 = {
 			isa = PBXGroup;
 			children = (
+				8FADC1A51A32C764007783F5 /* CoreGraphics.framework */,
+				2A45A0631A30DF2100961E5C /* CoreLocation.framework */,
+				2A45A0611A30CFD700961E5C /* MessageUI.framework */,
+				2AF4D6B81A3059A30099EAF1 /* AddressBookUI.framework */,
+				2AF4D6B61A30599B0099EAF1 /* AddressBook.framework */,
+				2ACB5BB61A0E93E200A7E294 /* libsqlite3.0.dylib */,
 				2ACB5B891A0E88CD00A7E294 /* iSafe */,
 				2ACB5BA61A0E88CD00A7E294 /* iSafeTests */,
 				2ACB5B881A0E88CD00A7E294 /* Products */,
@@ -83,11 +131,27 @@
 		2ACB5B891A0E88CD00A7E294 /* iSafe */ = {
 			isa = PBXGroup;
 			children = (
+				2A37C8811A24EA6D00096A1F /* Contact.h */,
+				8FADC1A71A32D1F4007783F5 /* iSafe.sqlite */,
+				2A37C8821A24EA6D00096A1F /* Contact.m */,
+				2ACB5BBB1A0E962800A7E294 /* NewGaurdianViewController.h */,
+				2ACB5BBC1A0E962800A7E294 /* NewGaurdianViewController.m */,
+				2AD92ADB1A303FD200E1DCAE /* GlobalVariables.h */,
+				2AD92ADC1A303FD200E1DCAE /* GlobalVariables.m */,
 				2ACB5B8E1A0E88CD00A7E294 /* AppDelegate.h */,
 				2ACB5B8F1A0E88CD00A7E294 /* AppDelegate.m */,
 				2ACB5B941A0E88CD00A7E294 /* ViewController.h */,
 				2ACB5B951A0E88CD00A7E294 /* ViewController.m */,
 				2ACB5B971A0E88CD00A7E294 /* Main.storyboard */,
+				2AF4D6B31A30548B0099EAF1 /* ContactsTableViewController.h */,
+				2AF4D6B41A30548B0099EAF1 /* ContactsTableViewController.m */,
+				2A39FD871A2B947D00E5243A /* VideoCallViewController.h */,
+				2A39FD881A2B947D00E5243A /* VideoCallViewController.m */,
+				2AB6A9F51A2A7E84006F87D4 /* AddOrCancel.h */,
+				2ACB5BBE1A0EE53700A7E294 /* AddGaurdiansViewController.h */,
+				2ACB5BBF1A0EE53700A7E294 /* AddGaurdiansViewController.m */,
+				2A6CD2951A32353300A1137A /* FirstAidTVC.h */,
+				2A6CD2961A32353300A1137A /* FirstAidTVC.m */,
 				2ACB5B9A1A0E88CD00A7E294 /* Images.xcassets */,
 				2ACB5B9C1A0E88CD00A7E294 /* LaunchScreen.xib */,
 				2ACB5B911A0E88CD00A7E294 /* iSafe.xcdatamodeld */,
@@ -171,6 +235,7 @@
 				TargetAttributes = {
 					2ACB5B861A0E88CD00A7E294 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = UFGJ795CXX;
 					};
 					2ACB5BA21A0E88CD00A7E294 = {
 						CreatedOnToolsVersion = 6.1;
@@ -204,6 +269,7 @@
 			files = (
 				2ACB5B991A0E88CD00A7E294 /* Main.storyboard in Resources */,
 				2ACB5B9E1A0E88CD00A7E294 /* LaunchScreen.xib in Resources */,
+				8FADC1A81A32D1F4007783F5 /* iSafe.sqlite in Resources */,
 				2ACB5B9B1A0E88CD00A7E294 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,8 +290,15 @@
 			files = (
 				2ACB5B901A0E88CD00A7E294 /* AppDelegate.m in Sources */,
 				2ACB5B931A0E88CD00A7E294 /* iSafe.xcdatamodeld in Sources */,
+				2AF4D6B51A30548B0099EAF1 /* ContactsTableViewController.m in Sources */,
 				2ACB5B961A0E88CD00A7E294 /* ViewController.m in Sources */,
 				2ACB5B8D1A0E88CD00A7E294 /* main.m in Sources */,
+				2A37C8831A24EA6D00096A1F /* Contact.m in Sources */,
+				2ACB5BBD1A0E962800A7E294 /* NewGaurdianViewController.m in Sources */,
+				2AD92ADD1A303FD200E1DCAE /* GlobalVariables.m in Sources */,
+				2A39FD891A2B947D00E5243A /* VideoCallViewController.m in Sources */,
+				2ACB5BC01A0EE53700A7E294 /* AddGaurdiansViewController.m in Sources */,
+				2A6CD2971A32353300A1137A /* FirstAidTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,9 +422,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iSafe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -359,9 +437,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iSafe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -418,6 +501,7 @@
 				2ACB5BAF1A0E88CD00A7E294 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2ACB5BB01A0E88CD00A7E294 /* Build configuration list for PBXNativeTarget "iSafeTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +510,7 @@
 				2ACB5BB21A0E88CD00A7E294 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

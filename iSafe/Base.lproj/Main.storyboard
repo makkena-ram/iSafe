@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4EK-iH-wzp">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--iSafe-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,444 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBu-7D-4lU">
+                                <rect key="frame" x="250" y="114" width="101" height="30"/>
+                                <state key="normal" title="Add Gaurdians">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addGaurdians:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cxU-Bj-7ox"/>
+                                    <segue destination="7LZ-J8-DB2" kind="show" identifier="addGaurdians" id="vr5-BN-z00"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfZ-tx-eUn">
+                                <rect key="frame" x="266" y="274" width="69" height="30"/>
+                                <state key="normal" title="Video Call">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="videoCall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t6N-Me-eu5"/>
+                                    <segue destination="oZY-qB-a0U" kind="presentation" id="pJi-bC-Cj2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Mf-Ec-fhl">
+                                <rect key="frame" x="286" y="194" width="30" height="30"/>
+                                <state key="normal" title="SOS">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sOS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="To0-Rn-Lpj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGQ-22-WoJ">
+                                <rect key="frame" x="272" y="354" width="57" height="30"/>
+                                <state key="normal" title="First Aid">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="firstAid:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a7f-NT-0A1"/>
+                                    <segue destination="eVz-yd-kdK" kind="show" id="Ezx-Qx-Zlk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="hBu-7D-4lU" secondAttribute="trailing" id="F3M-gI-hMi"/>
+                            <constraint firstItem="hBu-7D-4lU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ggo-cD-uFd"/>
+                            <constraint firstItem="zGQ-22-WoJ" firstAttribute="centerX" secondItem="hBu-7D-4lU" secondAttribute="centerX" id="H8k-2p-9xn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="zGQ-22-WoJ" secondAttribute="bottom" id="QoU-aB-1Ly"/>
+                            <constraint firstItem="sfZ-tx-eUn" firstAttribute="centerX" secondItem="hBu-7D-4lU" secondAttribute="centerX" id="SI1-PL-hLc"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="2Mf-Ec-fhl" secondAttribute="trailing" id="W8X-Ca-tCg"/>
+                            <constraint firstItem="2Mf-Ec-fhl" firstAttribute="top" secondItem="hBu-7D-4lU" secondAttribute="bottom" constant="50" id="XJb-Kj-fYy"/>
+                            <constraint firstItem="sfZ-tx-eUn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Z8G-n5-n8n"/>
+                            <constraint firstItem="zGQ-22-WoJ" firstAttribute="top" secondItem="sfZ-tx-eUn" secondAttribute="bottom" constant="50" id="ZVX-81-zK9"/>
+                            <constraint firstItem="zGQ-22-WoJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fCc-Q2-AC0"/>
+                            <constraint firstItem="2Mf-Ec-fhl" firstAttribute="centerX" secondItem="hBu-7D-4lU" secondAttribute="centerX" id="fHq-xH-SW4"/>
+                            <constraint firstItem="sfZ-tx-eUn" firstAttribute="top" secondItem="2Mf-Ec-fhl" secondAttribute="bottom" constant="50" id="fZp-FT-QAb"/>
+                            <constraint firstItem="hBu-7D-4lU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gZh-pm-idR"/>
+                            <constraint firstItem="2Mf-Ec-fhl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iaE-iP-QHK"/>
+                            <constraint firstItem="hBu-7D-4lU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="pNA-nd-0oz"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="zGQ-22-WoJ" secondAttribute="trailing" id="wfI-So-qzu"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="sfZ-tx-eUn" secondAttribute="trailing" id="xPF-i5-x7r"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="iSafe" id="xw2-SX-iXc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1367" y="-384"/>
+        </scene>
+        <!--Add Gaurdians View Controller-->
+        <scene sceneID="W6w-fr-t1a">
+            <objects>
+                <viewController id="7LZ-J8-DB2" customClass="AddGaurdiansViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xLf-ZP-1fp"/>
+                        <viewControllerLayoutGuide type="bottom" id="htB-cc-R5a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rHe-jO-wCx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gyy-QC-ekZ">
+                                <rect key="frame" x="20" y="64" width="560" height="292"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="7LZ-J8-DB2" id="gwT-L8-o1F"/>
+                                    <outlet property="delegate" destination="7LZ-J8-DB2" id="Xb8-dQ-Kee"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wef-wm-KVB">
+                                <rect key="frame" x="234" y="401" width="133" height="30"/>
+                                <state key="normal" title="Add From Contacts">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addFromContacts:" destination="7LZ-J8-DB2" eventType="touchUpInside" id="J4g-GB-Sws"/>
+                                    <segue destination="NZK-F1-BqW" kind="presentation" id="phI-qm-zEq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOj-gr-pgA">
+                                <rect key="frame" x="234" y="476" width="133" height="30"/>
+                                <state key="normal" title="Add New Contact">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addNewContact:" destination="7LZ-J8-DB2" eventType="touchUpInside" id="n0H-OF-0ag"/>
+                                    <segue destination="WdH-Vw-if9" kind="presentation" id="Uy0-QS-z1h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wef-wm-KVB" firstAttribute="top" secondItem="gyy-QC-ekZ" secondAttribute="bottom" constant="45" id="26t-IH-TOd"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="wef-wm-KVB" secondAttribute="trailing" id="2Ih-Q8-bUs"/>
+                            <constraint firstItem="wef-wm-KVB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rHe-jO-wCx" secondAttribute="leadingMargin" id="5pn-da-T8y"/>
+                            <constraint firstItem="mOj-gr-pgA" firstAttribute="trailing" secondItem="wef-wm-KVB" secondAttribute="trailing" id="773-eG-Lyr"/>
+                            <constraint firstItem="wef-wm-KVB" firstAttribute="centerX" secondItem="gyy-QC-ekZ" secondAttribute="centerX" id="ECA-d0-U8U"/>
+                            <constraint firstItem="htB-cc-R5a" firstAttribute="top" secondItem="mOj-gr-pgA" secondAttribute="bottom" constant="94" id="UXT-Sa-7XA"/>
+                            <constraint firstItem="mOj-gr-pgA" firstAttribute="leading" secondItem="wef-wm-KVB" secondAttribute="leading" id="aTG-1M-OpN"/>
+                            <constraint firstItem="mOj-gr-pgA" firstAttribute="centerX" secondItem="gyy-QC-ekZ" secondAttribute="centerX" id="apv-VM-usU"/>
+                            <constraint firstItem="gyy-QC-ekZ" firstAttribute="leading" secondItem="rHe-jO-wCx" secondAttribute="leadingMargin" id="pY7-Ni-mfd"/>
+                            <constraint firstItem="gyy-QC-ekZ" firstAttribute="top" secondItem="xLf-ZP-1fp" secondAttribute="bottom" id="s8b-nx-D4P"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gyy-QC-ekZ" secondAttribute="trailing" id="tVF-90-ne8"/>
+                            <constraint firstItem="mOj-gr-pgA" firstAttribute="top" secondItem="wef-wm-KVB" secondAttribute="bottom" constant="45" id="waR-zk-FGP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="gyy-QC-ekZ" id="lSn-ib-i3z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="APN-jv-3qk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2038" y="-384"/>
+        </scene>
+        <!--Video Call View Controller-->
+        <scene sceneID="2bq-2z-jNl">
+            <objects>
+                <viewController id="oZY-qB-a0U" customClass="VideoCallViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cFf-We-8EM"/>
+                        <viewControllerLayoutGuide type="bottom" id="1s6-RH-q4x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MYY-tj-B2I">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZ6-vw-aRP">
+                                <rect key="frame" x="251" y="116" width="99" height="69"/>
+                                <state key="normal" title="Capture Video">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="captureImage:" destination="oZY-qB-a0U" eventType="touchUpInside" id="EUV-N2-A4z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgg-Sb-qkU">
+                                <rect key="frame" x="286" y="285" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QsH-S4-UHt"/>
+                                </constraints>
+                                <state key="normal" title="Play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playVideo:" destination="oZY-qB-a0U" eventType="touchUpInside" id="Nua-Lv-usz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1s6-RH-q4x" firstAttribute="top" relation="greaterThanOrEqual" secondItem="tgg-Sb-qkU" secondAttribute="bottom" id="3GK-XJ-hFv"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="tgg-Sb-qkU" secondAttribute="trailing" id="DAz-D1-gyy"/>
+                            <constraint firstItem="tgg-Sb-qkU" firstAttribute="top" secondItem="VZ6-vw-aRP" secondAttribute="bottom" constant="100" id="KEv-hL-9Ee"/>
+                            <constraint firstItem="tgg-Sb-qkU" firstAttribute="centerY" secondItem="MYY-tj-B2I" secondAttribute="centerY" id="VyA-sP-dmd"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="VZ6-vw-aRP" secondAttribute="trailing" id="cjw-GA-vna"/>
+                            <constraint firstItem="VZ6-vw-aRP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MYY-tj-B2I" secondAttribute="leadingMargin" id="qTo-aJ-ars"/>
+                            <constraint firstItem="VZ6-vw-aRP" firstAttribute="top" secondItem="cFf-We-8EM" secondAttribute="bottom" constant="96" id="qpp-V5-pkk"/>
+                            <constraint firstItem="VZ6-vw-aRP" firstAttribute="centerX" secondItem="MYY-tj-B2I" secondAttribute="centerX" id="wWd-kA-MOC"/>
+                            <constraint firstItem="tgg-Sb-qkU" firstAttribute="centerX" secondItem="VZ6-vw-aRP" secondAttribute="centerX" id="yfE-Wh-1mr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GqR-1x-c52" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1667" y="415"/>
+        </scene>
+        <!--Contacts Table View Controller-->
+        <scene sceneID="QQH-Uf-VO6">
+            <objects>
+                <tableViewController id="NZK-F1-BqW" customClass="ContactsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ebE-nk-2my">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Contacts" textLabel="nMV-Hi-TwU" detailTextLabel="IZE-19-U1h" style="IBUITableViewCellStyleSubtitle" id="sqb-Co-RcY">
+                                <rect key="frame" x="0.0" y="22" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sqb-Co-RcY" id="jgy-vt-qV1">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nMV-Hi-TwU">
+                                            <rect key="frame" x="15" y="5" width="32" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IZE-19-U1h">
+                                            <rect key="frame" x="15" y="25" width="41" height="14"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NZK-F1-BqW" id="QYh-ab-XmE"/>
+                            <outlet property="delegate" destination="NZK-F1-BqW" id="lc4-l5-XJ8"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y90-vR-MVS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2329" y="400"/>
+        </scene>
+        <!--New Gaurdian View Controller-->
+        <scene sceneID="zEU-aU-v5w">
+            <objects>
+                <viewController id="WdH-Vw-if9" customClass="NewGaurdianViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pi5-T6-aWe"/>
+                        <viewControllerLayoutGuide type="bottom" id="2ol-ja-s9T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HVT-CV-5oV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFR-fi-Xsa">
+                                <rect key="frame" x="94" y="120" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone Number:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rh2-aY-DMj">
+                                <rect key="frame" x="98" y="198" width="121" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIY-om-KZm">
+                                <rect key="frame" x="98" y="270" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lBB-8Z-ngQ">
+                                <rect key="frame" x="289" y="116" width="278" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K2O-Y4-KTc">
+                                <rect key="frame" x="289" y="194" width="278" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QRL-Mp-jif">
+                                <rect key="frame" x="289" y="267" width="278" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3b3-ya-iGy">
+                                <rect key="frame" x="148" y="397" width="48" height="30"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel:" destination="WdH-Vw-if9" eventType="touchUpInside" id="pjH-ns-gwU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXl-Y1-yGn">
+                                <rect key="frame" x="365" y="397" width="37" height="30"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="done:" destination="WdH-Vw-if9" eventType="touchUpInside" id="8Qm-kB-nau"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="email" destination="QRL-Mp-jif" id="LIb-so-IVs"/>
+                        <outlet property="gaurdianName" destination="lBB-8Z-ngQ" id="YJz-vw-b7P"/>
+                        <outlet property="phNumber" destination="K2O-Y4-KTc" id="eO4-90-Ha6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pqI-8e-OhY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2707" y="-384"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Yos-d3-AaN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4EK-iH-wzp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="U4K-21-HOC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Tse-Kr-8mD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ICI-uh-a4l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="717" y="-384"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MdE-Ig-Qyq">
+            <objects>
+                <viewController id="eVz-yd-kdK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UkC-z2-xwj"/>
+                        <viewControllerLayoutGuide type="bottom" id="dgg-E8-91b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9QC-Qi-Ltc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ab3-bT-P9E">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">  First aid for a heart attack :
+     1. The person may have persistent, vice-like chest pain, which may spread to their arms,neck, jaw, back or stomach.
+     2. Call 999 immediately or get someone else to do it.
+     3. Make sure they are in a position that is comfortable for them (e.g. sit them on the floor,leaning against a wall or chair).
+     4. Give them constant reassurance while waiting for the ambulance.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mD3-0y-udv">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">First aid for diabetes:
+ 1. Give them something sweet to eat or a non-diet drink.
+ 2. Reassure the person. If there is no improvement, call 999 or get someone else to do it.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Ar-Qf-WG9">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wwM-ws-hN0">
+                                <color key="backgroundColor" red="0.69613392039999999" green="1" blue="0.47642084210000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">  First aid for a heart attack : 
+    1. The person may have persistent, vice-like chest pain, which may spread to their arms,neck, jaw, back or stomach.
+    2. Call 999 immediately or get someone else to do it. 
+    3. Make sure they are in a position that is comfortable for them (e.g. sit them on the floor,leaning against a wall or chair).
+    4. Give them constant reassurance while waiting for the ambulance.
+  
+  First aid for diabetes : 
+    1. Give them something sweet to eat or a non-diet drink. 
+    2. Reassure the person. If there is no improvement, call 999 or get someone else to do it.
+  
+  Bleeding heavily : 
+    1. Put pressure on the wound with whatever is available to stop or slow down the flow of blood. 
+    2. As soon as possible, call 999 or get someone else to do it.
+    3. Keep pressure on the wound until help arrives.
+  
+  First aid for choking: 
+    1. Hit them firmly on their back between the shoulder blades to dislodge the object. 
+    2. If necessary, call 999 or get someone else to do it.
+   
+  First aid for burns :
+    1. Cool the burn under cold running water for at least ten minutes.
+    2. Loosely cover the burn with cling film or a clean plastic bag.
+    3. If necessary, call 999 or get someone else to do it.
+   
+  Unconscious and not breathing : 
+    1. Check breathing by tilting their head backwards and looking and feeling for breaths.
+    2. Call 999 as soon as possible, or get someone else to do it.
+    3. Push firmly downwards in the middle of the chest and then release. 
+    4. Push at a regular rate until help arrives.</string>
+                                <color key="textColor" red="0.0073310481819999999" green="0.030341824230000002" blue="0.027575061429999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Tj-LZ-dXE">
+                                <rect key="frame" x="0.0" y="-329" width="600" height="929"/>
+                                <color key="backgroundColor" red="0.69613392039999999" green="1" blue="0.47642084210000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">  First aid for a heart attack : 
+    1. The person may have persistent, vice-like chest pain, which may spread to their arms,neck, jaw, back or stomach.
+    2. Call 999 immediately or get someone else to do it. 
+    3. Make sure they are in a position that is comfortable for them (e.g. sit them on the floor,leaning against a wall or chair).
+    4. Give them constant reassurance while waiting for the ambulance.
+  
+  First aid for diabetes : 
+    1. Give them something sweet to eat or a non-diet drink. 
+    2. Reassure the person. If there is no improvement, call 999 or get someone else to do it.
+  
+  Bleeding heavily : 
+    1. Put pressure on the wound with whatever is available to stop or slow down the flow of blood. 
+    2. As soon as possible, call 999 or get someone else to do it.
+    3. Keep pressure on the wound until help arrives.
+  
+  First aid for choking: 
+    1. Hit them firmly on their back between the shoulder blades to dislodge the object. 
+    2. If necessary, call 999 or get someone else to do it.
+   
+  First aid for burns :
+    1. Cool the burn under cold running water for at least ten minutes.
+    2. Loosely cover the burn with cling film or a clean plastic bag.
+    3. If necessary, call 999 or get someone else to do it.
+   
+  Unconscious and not breathing : 
+    1. Check breathing by tilting their head backwards and looking and feeling for breaths.
+    2. Call 999 as soon as possible, or get someone else to do it.
+    3. Push firmly downwards in the middle of the chest and then release. 
+    4. Push at a regular rate until help arrives.</string>
+                                <color key="textColor" red="0.0073310481819999999" green="0.030341824230000002" blue="0.027575061429999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qui-Yu-unz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ks1-GI-A2r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855" y="308"/>
         </scene>
     </scenes>
 </document>
